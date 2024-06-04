@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <p>To Do List</p>
+        </header>
+        <main>
+            <h2>Add New To Do</h2>
+            <div class="inputs">
+                <input type="text" id="item-input" placeholder="New to do..."
+                    onkeydown="if(event.key === 'Enter') addItem()">
+                <button onclick="addItem()">Add</button>
+            </div>
+
+            <div class="flexlist">
+                <h2>To Do List</h2>
+                <ul id="todolist" class="todolist"></ul>
+                <button id="clearbtn" class="clearbtn" onclick="clearCompleted()">Clear Completed</button>
+            </div>
+        </main>
+        <footer>
+            <span>Carlos Lima &copy; <span id="year"></span></span>
+        </footer>
+    </div>
+
+    <script src="assets/todo.js"></script>
+</body>
+
+</html>
