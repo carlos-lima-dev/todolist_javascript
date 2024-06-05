@@ -29,7 +29,7 @@ header p {
 main {
   padding: 1rem;
   background-color: #f7f9fc;
-  min-height: calc(100vh - 8rem);
+  min-height: 85vh;
 }
 
 main h2 {
